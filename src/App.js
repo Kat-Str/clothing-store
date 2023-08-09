@@ -1,10 +1,10 @@
-import Categories from "./components/categories/categories.component";
+import Directory from "./components/directory/directory.component";
 
 function App() {
   return (
     <div className="App">
       <h1>Clothing store</h1>
-      <Categories />
+      <Directory />
     </div>
   );
 }
