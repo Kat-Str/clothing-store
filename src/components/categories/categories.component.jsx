@@ -1,4 +1,4 @@
-import React from "react";
+import "./categories.styles.scss";
 
 const Categories = () => {
   const categoryItems = [
