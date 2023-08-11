@@ -1,11 +1,17 @@
-import Directory from "./components/directory/directory.component";
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.component";
+
+const Shop = () => {
+  return <h1>Test shop</h1>;
+};
 
 function App() {
   return (
-    <div className="App">
-      <h1>Clothing store</h1>
-      <Directory />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}>
+        <Route path="shop" element={<Shop />} />
+      </Route>
+    </Routes>
   );
 }
 
